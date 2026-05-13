@@ -1,0 +1,12 @@
+Prompt: Photorealistic half-body portrait of a cheerful young Israeli woman in her late 20s with shoulder-length auburn red hair and a warm natural smile, looking directly at the camera. She is holding a small wooden model house with a single shiny silver key resting on top, presented confidently toward the viewer with both hands at chest height. She wears a simple navy blue button-down shirt. The entire background is a flat, saturated mustard-yellow color (#F2C94C), completely uniform with no texture or gradient. Soft even studio lighting, bright and friendly mood, no shadows on the background. Style: clean modern commercial photography, advertising portrait, photoreal, sharp focus on subject. Composition: centered, half-body framing, subject facing forward. Color palette: mustard yellow background, auburn red hair, navy blue clothing, warm skin tones, natural wood and silver tones for the house model. Mood: reassuring, confident, calm, financial certainty and order. No text, no logos, no watermarks.
+
+References used:
+- yuval/reference/1.png
+- yuval/reference/2.png
+- yuval/reference/3.png
+- yuval/reference/4.png
+
+Generated: 2026-05-13
+Model: gpt-image-2
+Size: 1024x1024
+Quality: medium
