@@ -1,0 +1,9 @@
+Prompt: Photorealistic commercial photograph of an Israeli woman in her mid-30s sitting at a desk in front of a computer monitor, looking at the screen with a thoughtful, slightly puzzled expression. The monitor displays a clean occupancy dashboard interface that is mostly empty with sparse data, low numbers, mostly blank charts and zero-state indicators. She wears a navy blue knit sweater. A muted auburn-red (ochre-red) ceramic coffee mug sits on the desk next to her. The background wall behind her is a flat mustard yellow color, evenly lit. Soft, diffused natural-feeling lighting from the front-left, gentle shadows, warm but contemplative mood, conveying the feeling of trying to figure out why something is not working. Composition: medium close-up, subject slightly off-center, monitor partially visible in frame showing the dashboard. Color palette strictly limited to: mustard yellow background, navy blue sweater, auburn-red mug, neutral skin tones, soft desk neutrals. Style: high-end editorial commercial photography, photoreal, shallow depth of field, sharp focus on her face and hands, magazine-quality finish, no text artifacts on screen.
+
+References used:
+- none — yuval/reference/ was empty (only .gitkeep present). Style and palette derived directly from the brief: mustard yellow / navy blue / auburn-red, photoreal commercial photography.
+
+Generated: 2026-05-13
+Model: gpt-image-2
+Size: 1024x1024
+Quality: medium

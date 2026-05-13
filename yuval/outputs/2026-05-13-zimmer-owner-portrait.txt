@@ -1,0 +1,9 @@
+Prompt: Photorealistic half-body portrait of an Israeli zimmer (cabin guesthouse) owner, a man in his mid-40s, standing in the open doorway of a wooden cabin holding a set of brass keys in his hand at chest height, facing forward with an optimistic yet thoughtful, contemplative gaze toward the camera. He wears a navy blue button-down shirt, neat appearance, light stubble. Behind him on both sides of the cabin doorway and extending into the background, a flat saturated mustard-yellow color (#F2C94C) dominates the frame with a very soft, blurred hint of green Galilee hills in the far distance, treated almost as a faint silhouette so the mustard yellow remains the dominant background. Soft even natural daylight, gentle warm shadows, calm mood evoking a return to work after a long quiet period. Style: clean modern commercial photography, advertising portrait, photoreal, sharp focus on subject. Composition: centered, half-body framing, subject facing forward, wooden cabin door visible around him. Color palette: mustard yellow background (#F2C94C), auburn red brown wood tones of the cabin, navy blue clothing, warm skin tones, brass key. Mood: hopeful, reflective, quiet determination, hospitality, fresh start. No text, no logos, no watermarks.
+
+References used:
+- none — yuval/reference/ was empty (only .gitkeep present). Style continuity maintained with previous session output (2026-05-13-loan-consolidation-homeowner): mustard-yellow background #F2C94C, navy blue clothing, auburn tones, photoreal commercial portrait.
+
+Generated: 2026-05-13
+Model: gpt-image-2
+Size: 1024x1024
+Quality: medium

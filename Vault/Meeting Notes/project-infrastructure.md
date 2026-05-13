@@ -28,6 +28,18 @@
 - **Notes / Caveats:** המעבר ל-pipeline אינטגרטיבי דורש מראובן לקרוא ל-Agent tool מספר פעמים (יעל פעם, יובל פעם פר תמונה) ולחבר את התוצאות. בלי delegation אמיתי, כל הארכיטקטורה קורסת — ראו `memory/feedback_dispatch_subagents.md`.
 - **Related:** [[reuven]], [[yael]], [[yuval]], [[skill-gpt-image-gen]], [[env-files]]
 
+### 2026-05-13 — First end-to-end pipeline run: north-israel-tourism-recovery [shipped]
+- **What was done:** ריצת E2E מלאה ראשונה של pipeline חן→יעל→יובל→ראובן. נושא: תיירות פנים בצפון אחרי המלחמה הארוכה + רשתות חברתיות מול פורטלים ישנים. תוצאה: [[chen]] מצאה מקור TheMarker איכותי + 2 משלימים, שמרה ב-`Content/2026-05-13-north-israel-tourism-recovery.md` עם frontmatter, ותיעדה ב-`chen/Memory/searches.md` (ה-entry הראשון בקובץ). [[yael]] שכתבה ל-`Output/...md` + `.html` עם 3 placeholders שתואמים את ה-references של [[yuval]] (פלטת צהוב חרדל / נייבי / אובורן). [[yuval]] רץ 3 פעמים במקביל, ייצר 3 PNG-ים ב-`yuval/outputs/`. ראובן העתיק ל-`Output/images/<slug>/` עם שמות סדרתיים (01-03) והחליף את כל ה-placeholders ב-MD וב-HTML עם קישורים יחסיים.
+- **Decisions:**
+  - **Sequential image naming ב-Output/images/:** `01-zimmer-owner.png`, `02-empty-dashboard.png`, `03-instagram-discovery.png` — קל לזהות סדר במאמר, slug של yuval/outputs/ נשאר תיאורי.
+  - **Parallel Yuval calls:** 3 קריאות Agent במסר אחד. שתי התמונות הראשונות הצליחו מיידית, השלישית קיבלה network error → retry בודד עבר בהצלחה (Python urllib fallback מתוך SKILL.md).
+  - **Alt text מתוך התיאור של יעל:** מקוצר ל-1 משפט לכל תמונה.
+- **Notes / Caveats:**
+  - **`yuval/reference/` ריקה לוקאלית** למרות שמסומנת ב-git (commit ea420a2). סביר OneDrive sync issue. שני יובל-ים דיווחו "references = none" וטענו לעקביות סגנונית מתוך השיחה — הצליחו לשמור פלטה. צריך לבדוק את המצב ולהחזיר את ה-references למערכת קבצים.
+  - **Python fallback של SKILL.md הוכיח את עצמו** — Yuval השני והשלישי השתמשו בו אחרי כשלון של bash heredoc.
+  - **כל הסוכנים בוצעו דרך Agent tool עם general-purpose** (subagent_type=chen/yael/yuval לא חשוף). לא נחזר על טעות הקיצורי-דרך מהפעם הקודמת.
+- **Related:** [[chen]], [[yael]], [[yuval]], [[skill-gpt-image-gen]]
+
 ### 2026-05-13 — Chen + full content pipeline activated [shipped]
 - **What was done:** נכתב הסוכן השלישי [[chen]] (`.claude/agents/chen.md`) עם `WebSearch`/`WebFetch` + זיכרון פרסיסטנטי ב-`chen/Memory/searches.md`. נוצרה תיקיית `chen/` עם header של searches.md ותבנית פורמט. CLAUDE.md הורחב עם סעיף "Pipeline: יצירת תוכן חדש מאפס (חן → יעל → יובל)" שמתאר 3 ה-pipelines האפשריים (חן בלבד, חן→יעל, חן→יעל→יובל) + טבלת דוגמאות לפענוח בקשות. [[yael]] עודכנה להתעלם מ-frontmatter של חן בקלט.
 - **Decisions:**

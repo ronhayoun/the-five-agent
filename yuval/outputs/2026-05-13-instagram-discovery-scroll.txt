@@ -1,0 +1,10 @@
+Prompt: Photorealistic intimate evening shot of a young Israeli woman in her early 30s, sitting comfortably on a sofa at home in the evening, scrolling Instagram on her smartphone held in both hands at chest level. Her facial expression shows genuine surprise and curiosity, eyes slightly widened with a soft involuntary smile starting to form, as she has just discovered unexpected content about a charming zimmer (cabin guesthouse) in northern Israel on the phone screen. She wears a soft, cozy auburn-red knit sweater (warm rust-auburn tone). The background is a flat, saturated mustard-yellow wall (#F2C94C) that dominates the frame, decorated with a few subtle navy-blue homey accents — a small navy throw cushion on the sofa beside her, a navy ceramic vase on a side shelf, a softly blurred navy-framed picture on the wall. Warm evening interior lighting, soft golden glow from a nearby lamp casting gentle warm shadows, intimate atmosphere of an unexpected moment of discovery. Style: clean modern commercial photography, advertising lifestyle portrait, photoreal, sharp focus on the woman's face and phone. Composition: centered to slightly off-center medium close-up, subject facing the phone with face visible in three-quarter angle to camera. Color palette: mustard yellow background (#F2C94C) dominant, warm auburn-red sweater, navy blue accent items, warm skin tones, soft warm lamp light. Mood: surprise, curiosity, cozy evening, intimate discovery. No text, no logos, no watermarks, no visible UI on the phone screen.
+
+References used:
+- none — yuval/reference/ was empty (OneDrive sync issue; files are in git but not on local filesystem). Style continuity maintained with previous session outputs (2026-05-13-zimmer-owner-portrait, 2026-05-13-empty-occupancy-dashboard, 2026-05-13-loan-consolidation-homeowner): mustard-yellow background #F2C94C, auburn-red and navy-blue palette, photoreal commercial photography.
+
+Generated: 2026-05-13
+Model: gpt-image-2
+Size: 1024x1024
+Quality: medium
+Notes: Previous attempt failed with network error; this retry used the Python urllib fallback from SKILL.md.
