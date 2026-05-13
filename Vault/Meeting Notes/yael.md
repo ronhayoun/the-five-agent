@@ -25,3 +25,20 @@
   - כללי הסרת קישורים/CTAs מוגדרים מפורשות ב-prompt עם עיקרון מנחה ("סיפור נשאר, פלטפורמת מחבר מוסרת").
 - **Notes / Caveats:** יעל יורשת את כל ה-17 סקילים תחת `.claude/skills/` — שימושי במיוחד `writing-skills` ו-`obsidian-markdown`. ה-HTML מומר ידנית מ-Markdown (אין לה כלי המרה).
 - **Related:** [[reuven]], [[project-infrastructure]], [[skill-obsidian-markdown]], [[yuval]], [[chen]]
+
+### 2026-05-13 — Image placeholder protocol added [shipped]
+- **What was done:** נוסף סעיף "## איתור מקומות לתמונה" ל-system prompt של יעל. יעל מתבקשת לזהות מקומות טבעיים לתמונה במאמר ולהשאיר `{{IMAGE_NEEDED: "<תיאור עם סגנון>"}}` ב-MD וב-HTML. בדיווח הסופי לראובן — רשימת ה-placeholders ממוספרת.
+- **Decisions:** תחביר ה-placeholder אחיד ב-MD וב-HTML (טקסט גלוי, לא comment) — מקל על debug ועל פעולת ה-merge של ראובן. יעל לא מייצרת תמונות בעצמה — היא רק מציינת איפה צריך.
+- **Notes / Caveats:** ב-HTML, ה-placeholder יוצג כטקסט גלוי לפני ההחלפה (לא ideal לתצוגה ביניים, אבל זה תוצר עבודה — הסופי יחליף את שני הצדדים). הסעיף החדש לפני "כללי שכתוב" ואחרי "Flow העבודה".
+- **Related:** [[yuval]], [[reuven]], [[project-infrastructure]], [[skill-gpt-image-gen]]
+
+### 2026-05-13 — First article rewrite: "מאמר CRM.txt" [shipped]
+- **What was done:** שכתוב של מאמר CRM (15.6KB) מ-`Content/מאמר CRM.txt` לשני תוצרים ב-`Output/`: `Output/מאמר CRM.md` ו-`Output/מאמר CRM.html`. ההמרה ל-HTML בוצעה ידנית עם תבנית ה-RTL הקלאסית מתוך ה-system prompt של יעל (פונט סריפי-עברי, רוחב 720px, line-height 1.75, blockquote עם border-right, responsive). הקובץ נצפה ב-Launch preview panel של VS Code.
+- **Decisions:**
+  - **הוסר:** CTA אחרון של המחבר ("תכתבו לי כמה המאמר הזה עזר לכם"), הזכרת "תלמידים שלי" (קידום פלטפורמת הדרכה), name-drop "איתי זרם" בדוגמה (הוחלף ב"לקוח ספציפי"), אימוג'ים (😅, 🙂), כותרת כפולה אקראית ("מה זה מערכת CRM") שהופיעה באמצע הטקסט המקורי.
+  - **נשמר:** סיפור הפיצה בשוהם (חלק מהסיפור), מותגים בתוך הסיפור (Make, WhatsApp, Excel, PowerPoint, Google Drive, GDPR), הכל ה-FAQ, הטון הכללי (B2B שיחתי-עברי).
+  - **שינויים בעריכה:** הידוק חזרות, ניקוי מילים בלתי-נחוצות ("אשכרה היה מבאס" → "היה מבאס"), המרת WhatsApp/וואטסאפ לכתיב אחיד (WhatsApp באנגלית), שיפור היררכיית כותרות.
+- **Notes / Caveats:**
+  - **style-guide ו-reference היו ריקים** — כתבתי לפי שיקול דעת סביר (טון B2B שיחתי, פחות אימוג'ים, יותר הידוק). כשהמשתמש יכתוב את style-guide.md ההפעלה הבאה תוכל לסטות בכיוון אחר.
+  - לא הופעל דרך Agent tool — `subagent_type=yael` לא חשוף ב-SDK הנוכחי. ראובן ביצע את הפרוטוקול ידנית עבור יעל.
+- **Related:** [[reuven]], [[project-infrastructure]]

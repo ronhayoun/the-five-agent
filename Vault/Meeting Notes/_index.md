@@ -6,8 +6,8 @@
 
 ### הצוות
 - [[reuven]] — ראובן, מנכ"ל הצוות (מיוצג ע"י CLAUDE.md)
-- [[yael]] — יעל, כותבת התוכן (sub-agent — טרם מוגדרת)
-- [[yuval]] — יובל, מעצב התמונות (sub-agent — טרם מוגדר)
+- [[yael]] — יעל, כותבת התוכן (sub-agent — **פעילה**)
+- [[yuval]] — יובל, מעצב התמונות (sub-agent — **פעיל**)
 - [[chen]] — חן, החוקרת (sub-agent — טרם מוגדרת)
 
 ### קבצי תשתית
@@ -19,6 +19,7 @@
 - [[skill-obsidian-vault-workflow]] — פרוטוקול ה-vault (חובה בכל סשן)
 - [[skill-obsidian-markdown]] — Obsidian-flavored Markdown
 - [[skill-obsidian-bases]] — תצוגות `.base` של Obsidian
+- [[skill-gpt-image-gen]] — מעטפת OpenAI Images API (`gpt-image-2`)
 
 ### אירועי התקנה / החלטות
 - [[superpowers-installation]] — התקנה ידנית של 14 הסקילים מ-obra/superpowers
