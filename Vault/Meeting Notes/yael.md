@@ -26,6 +26,12 @@
 - **Notes / Caveats:** יעל יורשת את כל ה-17 סקילים תחת `.claude/skills/` — שימושי במיוחד `writing-skills` ו-`obsidian-markdown`. ה-HTML מומר ידנית מ-Markdown (אין לה כלי המרה).
 - **Related:** [[reuven]], [[project-infrastructure]], [[skill-obsidian-markdown]], [[yuval]], [[chen]]
 
+### 2026-05-13 — Yael handles Chen's frontmatter [shipped]
+- **What was done:** נוספה הערה ב-system prompt של יעל (בתוך שלב "קריאת המאמר" ב-Flow העבודה) שמורה לה להתעלם מ-YAML frontmatter בקבצים שמקורם מ-[[chen]]. ה-rewrite מתחיל מתחת ל-frontmatter, מהכותרת `#` הראשונה. הפלט שלה לא כולל את ה-frontmatter — רק את התוכן ה-rewritten.
+- **Decisions:** Frontmatter מצד חן הוא internal metadata (URL, איכות, תאריך). אין סיבה להחזיר אותו בפלט הסופי של יעל — הוא יישאר בקובץ ה-Content/ המקורי לתיעוד. אם המשתמש ירצה attribution בתוצר הסופי, ראובן יוסיף אותו בשלב ה-merge.
+- **Notes / Caveats:** התוספת קצרה ולא משפיעה על Flow קיים — רק מנחה איך לטפל בסוג קלט חדש שמגיע מחן. יעל ממשיכה לעבוד גם על קבצים בלי frontmatter בדיוק כמו קודם.
+- **Related:** [[chen]], [[reuven]]
+
 ### 2026-05-13 — Image placeholder protocol added [shipped]
 - **What was done:** נוסף סעיף "## איתור מקומות לתמונה" ל-system prompt של יעל. יעל מתבקשת לזהות מקומות טבעיים לתמונה במאמר ולהשאיר `{{IMAGE_NEEDED: "<תיאור עם סגנון>"}}` ב-MD וב-HTML. בדיווח הסופי לראובן — רשימת ה-placeholders ממוספרת.
 - **Decisions:** תחביר ה-placeholder אחיד ב-MD וב-HTML (טקסט גלוי, לא comment) — מקל על debug ועל פעולת ה-merge של ראובן. יעל לא מייצרת תמונות בעצמה — היא רק מציינת איפה צריך.
