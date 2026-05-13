@@ -20,6 +20,21 @@
 - `skills/` - יכולות מותאמות שהצוות יכול להשתמש בהן.
 - `commands/` - פקודות מותאמות שהמשתמש יכול להריץ.
 
+בנוסף, תיקיית `Vault/` בשורש הפרויקט מחזיקה את הזיכרון ארוך-הטווח של הצוות (Obsidian-style) — קבצי MD לכל דמות, קובץ תשתית, והחלטה ארכיטקטונית. נקודת הכניסה: `Vault/Meeting Notes/_index.md`. תיקיית `.obsidian/` מכילה את הגדרות אפליקציית Obsidian (workspace, graph, plugins).
+
+## פרוטוקול תיעוד — חובה לכל סשן ולכל פקודה
+
+**לפני** כל משימה (פתיחת סשן, או פקודה חדשה מהמשתמש) — יש להפעיל את הסקיל `obsidian-vault-workflow` (תחת `.claude/skills/obsidian-vault-workflow/SKILL.md`). הסקיל מגדיר:
+
+1. **Phase 1 — לפני העבודה:** מציאת קובץ הטופיק הרלוונטי ב-`Vault/Meeting Notes/`, וקריאתו במלואו (Overview + Open Questions + Session Log).
+2. **Phase 2 — אחרי העבודה:** הוספת רישום מתוארך ל-Session Log של הטופיק, עדכון Overview אם השתנה ה-scope, עדכון Open Questions, ו-Read-back לאימות.
+
+סקילים תומכים נוספים תחת `.claude/skills/`:
+- `obsidian-markdown` — קונבנציות של Obsidian-flavored Markdown (wikilinks, callouts, embeds, frontmatter).
+- `obsidian-bases` — יצירה ועריכה של קבצי `.base` (תצוגות database-like על notes).
+
+ה-Vault הוא **הזיכרון** של הצוות. אל תתחיל משימה בלי לקרוא אותו, ואל תסיים בלי לעדכן אותו.
+
 ## הערה
 
 זהו קובץ ראשוני. בהמשך נוסיף לכאן את הוראות הניתוב המדויקות - איך אני מחליט את מי להפעיל בכל בקשה, ואיך הצוות עובד יחד.
